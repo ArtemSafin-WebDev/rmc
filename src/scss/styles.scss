@@ -1,0 +1,25 @@
+@import 'vendor';
+@import 'mixins';
+@import 'global';
+@import 'layout';
+@import 'text';
+@import 'fontface';
+@import 'page-header';
+@import 'page-footer';
+@import 'breadcrumbs';
+@import 'catalog-filter';
+
+// Blocks styles
+
+@import 'blocks/publications';
+@import 'blocks/videos';
+@import 'blocks/selected-news';
+@import 'blocks/article';
+@import 'blocks/read-also';
+@import 'blocks/needs';
+@import 'blocks/capabilities';
+@import 'blocks/similar';
+@import 'blocks/goods';
+
+
+

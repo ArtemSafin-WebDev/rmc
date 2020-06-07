@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Golos';
+    src: url('../assets/GolosRegular.woff2') format('woff2'),
+        url('../assets/GolosRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Golos';
+    src: url('../assets/GolosMedium.woff2') format('woff2'),
+        url('../assets/GolosMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Golos';
+    src: url('../assets/GolosBold.woff2') format('woff2'),
+        url('../assets/GolosBold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Golos';
+    src: url('../assets/GolosDemibold.woff2') format('woff2'),
+        url('../assets/GolosDemibold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+

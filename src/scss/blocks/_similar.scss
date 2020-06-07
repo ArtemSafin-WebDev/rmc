@@ -1,0 +1,49 @@
+.similar {
+    padding-top: 6rem;
+    padding-bottom: 7.5rem;
+
+    @include breakpoint(mobile) {
+        padding: 4rem 0;
+    }
+}
+
+.similar__heading {
+    font-weight: 500;
+    font-size: 3.2rem;
+    line-height: 3.8rem;
+    margin-bottom: 3rem;
+}
+
+.similar__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -2rem;
+}
+
+.similar__list-item {
+    padding: 2rem;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+
+    @include breakpoint(mobile) {
+        width: 50%;
+    }
+}
+
+.similar__card {
+    font-size: 1.6rem;
+    line-height: 150%;
+    color: #333333;
+    transition: color .2s;
+    &:link,
+    &:visited {
+        color: #333333;
+    }
+
+
+    .no-touch &:hover,
+    .touch &:active {
+        color: #0F65D6;
+    }
+}
