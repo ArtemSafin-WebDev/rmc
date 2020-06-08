@@ -3563,3 +3563,164 @@ img.lazyload:not([src]) {
     background: #E5E5EB;
     font-style: normal;
     color: #333333; }
+
+.media {
+  padding-bottom: 7rem; }
+  @media only screen and (max-width: 767px) {
+    .media {
+      padding-bottom: 4rem; } }
+
+.media__links {
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  border-bottom: 1px solid #e5e5eb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  @media only screen and (max-width: 767px) {
+    .media__links {
+      overflow-y: hidden;
+      -webkit-overflow-scrolling: touch;
+      margin: 0 calc(-1 * var(--content-padding));
+      padding: 0 var(--content-padding); }
+      .media__links::after {
+        content: '';
+        width: var(--content-padding);
+        height: 1px;
+        -ms-flex-negative: 0;
+            flex-shrink: 0; } }
+
+.media__link {
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  color: #0f65d6;
+  padding: 2.5rem 0;
+  margin-right: 2.4rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  display: block;
+  position: relative;
+  -webkit-transition: color .2s;
+  transition: color .2s; }
+  .media__link::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #0f65d6;
+    height: 0.3rem;
+    width: 100%;
+    -webkit-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+    opacity: 0; }
+  .media__link:link, .media__link:visited {
+    color: #000026; }
+  .no-touch .media__link:hover,
+  .touch .media__link:active {
+    color: #0f65d6; }
+  .media__link.active {
+    color: #0f65d6; }
+    .media__link.active::before {
+      opacity: 1; }
+  @media only screen and (max-width: 767px) {
+    .media__link {
+      padding: 2rem 0; } }
+
+.media__catalog {
+  padding-top: 4.5rem;
+  padding-bottom: 3rem; }
+
+.media__catalog-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -1.5rem; }
+
+.media__catalog-list-item {
+  width: 33.33%;
+  padding: 1.5rem; }
+  @media only screen and (max-width: 968px) {
+    .media__catalog-list-item {
+      width: 50%; } }
+  @media only screen and (max-width: 767px) {
+    .media__catalog-list-item {
+      width: 100%; } }
+
+.media__card-title {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 130%;
+  margin-bottom: 2rem; }
+
+.media__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  min-height: 24rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  position: relative;
+  z-index: 1;
+  padding: 3rem;
+  border: 1px solid #E5E5EB; }
+  .media__card:link, .media__card:visited {
+    color: white; }
+  .media__card--dark-text:link, .media__card--dark-text:visited {
+    color: #000026; }
+  .no-touch .media__card:hover,
+  .touch .media__card:active {
+    background: #eff1f6;
+    -webkit-box-shadow: 0px 0.8rem 2rem rgba(118, 118, 122, 0.3);
+            box-shadow: 0px 0.8rem 2rem rgba(118, 118, 122, 0.3);
+    border-color: #eff1f6; }
+    .no-touch .media__card:hover .media__card-link,
+    .touch .media__card:active .media__card-link {
+      background: #0F65D6;
+      border-color: #0F65D6;
+      color: white; }
+
+.media__card-image {
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  font-family: 'object-fit: cover; object-position: center;'; }
+
+.media__card-link {
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  color: #0f65d6;
+  padding: 1rem 1.5rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-top: auto;
+  border: 1px solid #e5e5eb;
+  border-radius: 0.4rem;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  -ms-flex-item-align: start;
+      align-self: flex-start; }
+  .media__card--with-image .media__card-link {
+    color: white;
+    border: 1px solid #e5e5eb; }
+    .media__card--with-image .media__card-link:link, .media__card--with-image .media__card-link:visited {
+      color: white; }
+  .media__card-link:link, .media__card-link:visited {
+    color: #0f65d6; }
