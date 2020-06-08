@@ -1,0 +1,122 @@
+.deals {
+    padding-bottom: 4.2rem;
+}
+
+.deals__catalog {
+    padding-top: 2.6rem;
+    padding-bottom: 4.1rem;
+}
+
+.deals__catalog-list-item {
+    margin-bottom: 2rem;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.deals__card {
+    display: flex;
+    flex-direction: column;
+    min-height: 24rem;
+    border: 1px solid #e5e5eb;
+    padding: 3rem;
+    border-radius: 0.4rem;
+    transition: background-color .2s, border-color .2s;
+
+    .no-touch &:hover,
+    .touch &:active {
+        background: #EFF1F6;
+        border-color: #EFF1F6;
+    }
+}
+
+.deals__card-top-row {
+    display: flex;
+    margin-bottom: 2rem;
+    @include breakpoint(mobile) {
+        flex-direction: column;
+        margin-bottom: 4rem;
+    }
+}
+
+.deals__card-title {
+    max-width: 60rem;
+    margin-right: auto;
+    color: #000026;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 130%;
+    @include breakpoint(mobile) {
+        max-width: none;
+        margin-bottom: 1rem;
+    }
+}
+
+.deals__card-price {
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 130%;
+    text-align: right;
+    color: #000026;
+    @include breakpoint(mobile) {
+        text-align: left;
+    }
+}
+
+.deals__card-bottom-row {
+    display: flex;
+    margin-top: auto;
+
+    @include breakpoint(mobile) {
+        flex-direction: column;
+
+    }
+}
+
+.deals__card-info-item {
+    display: flex;
+    flex-direction: column;
+
+   
+
+    &--org {
+        flex-basis: 50rem;
+        margin-right: 4.7rem;
+    }
+
+
+    &--sup {
+        flex-basis: 24rem;
+        margin-right: auto;
+    }
+
+
+    &--date {
+        flex-basis: 15rem;
+        margin-left: 2rem;
+        
+    }
+
+    @include breakpoint(mobile) {
+        width: 100%;
+        flex-basis: auto;
+        margin: 0;
+        margin-bottom: 2rem;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.deals__card-info-item-key {
+    font-size: 1.4rem;
+    line-height: 130%;
+    color: #0f65d6;
+    margin-bottom: 0.6rem;
+}
+
+.deals__card-info-item-value {
+    font-size: 1.4rem;
+    line-height: 130%;
+    color: #76767a;
+}

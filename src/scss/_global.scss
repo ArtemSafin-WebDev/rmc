@@ -11,7 +11,7 @@
     --content-padding: 4rem;
     --golos: 'Golos', sans-serif;
 
-    @include breakpoint(small-tablet) {
+    @include breakpoint(mobile) {
         --content-padding: 2rem;
     }
 }
