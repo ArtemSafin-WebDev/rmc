@@ -1,6 +1,7 @@
 [
   "article.html",
   "capabilities.html",
+  "catalog-table.html",
   "catalog.html",
   "deals.html",
   "goods.html",
@@ -8,5 +9,6 @@
   "media.html",
   "niche.html",
   "search.html",
-  "sitemap.html"
+  "sitemap.html",
+  "stats.html"
 ]

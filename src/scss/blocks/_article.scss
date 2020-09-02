@@ -4,6 +4,9 @@
 .article__content {
     padding-bottom: 5rem;
     border-bottom: 1px solid #e5e5eb;
+    &:last-child {
+        border: none;
+    }
 }
 
 .article__top-image-block {

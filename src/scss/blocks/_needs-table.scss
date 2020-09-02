@@ -1,0 +1,116 @@
+.needs-table {
+    margin-bottom: 8rem;
+}
+
+.needs-table__content {
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        vertical-align: top;
+        text-align: left;
+
+        th,
+        td {
+            vertical-align: top;
+            text-align: left;
+            padding: 0.8rem 1.2rem;
+            padding-bottom: 1.4rem;
+        }
+        thead {
+            th {
+                font-weight: 800;
+                font-size: 1.6rem;
+                line-height: 180%;
+                line-height: 1;
+                background: #eff1f6;
+                padding: 1.2rem 1.2rem;
+                @include breakpoint(mobile) {
+                    white-space: nowrap;
+                }
+            }
+        }
+
+        tbody {
+            a {
+                display: block;
+
+                &:link,
+                &:visited {
+                    color: #0f65d6;
+                }
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+
+            td {
+                border-bottom: 1px solid #c4c4c4;
+            }
+
+            td[rowspan] ~ td:not([rowspan]) {
+                border-bottom: none;
+            }
+        }
+    }
+}
+
+.needs-table__item-info {
+    display: flex;
+    align-items: flex-start;
+   
+}
+
+.needs-table__item-info-image-container {
+    position: relative;
+    background: #c4c4c4;
+    border-radius: 0.4rem;
+    width: 6rem;
+    overflow: hidden;
+    margin-right: 1.6rem;
+    flex-shrink: 0;
+    &::after {
+        content: '';
+        display: block;
+        width: 100%;
+        padding-bottom: 100%;
+    }
+
+    img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        @include objectFitCover();
+    }
+}
+
+.needs-table__item-info-text {
+    width: 50%;
+    flex-grow: 1;
+}
+
+.needs-table__scroll-wrapper {
+    width: 100%;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+
+    @include breakpoint(mobile) {
+        width: auto;
+        margin: 0 calc(-1 * var(--content-padding));
+
+       
+    }
+   
+}
+
+
+.needs-table__wrapper {
+   
+
+    @include breakpoint(mobile) {
+        padding: 0 var(--content-padding);
+    }
+    
+}

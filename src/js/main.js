@@ -4,6 +4,7 @@ import videosSlider from './videosSlider';
 import burgerMenu from './burgerMenu';
 import readAlsoSlider from './readAlsoSlider';
 import customSelects from './customSelect';
+import scrollableTables from './scrollableTable';
 
 document.addEventListener('DOMContentLoaded', function() {
     polyfills();
@@ -12,6 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
     videosSlider();
     readAlsoSlider();
     customSelects();
+    scrollableTables();
 });
 
 window.addEventListener('load', function() {

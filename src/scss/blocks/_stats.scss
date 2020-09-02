@@ -1,0 +1,46 @@
+.stats {
+    margin-bottom: 30px;
+}
+
+
+.stats__table-scroll-wrapper {
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+
+    &::-webkit-scrollbar {
+        background-color: white;
+        width: 0.8rem;
+        height: 0.8rem;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #0F65D6;
+       
+    }
+
+    &::-webkit-scrollbar-button {
+        display: none;
+    }
+
+    &::-webkit-scrollbar-track {
+       
+        background-color: #eff1f6;
+    }
+}
+
+
+.stats__table-wrapper {
+    cursor: grab;
+    img {
+        width: auto;
+        height: auto;
+        max-height: 120rem;
+        max-width: none;
+        user-select: none;
+        pointer-events: none;
+
+        @include breakpoint(mobile) {
+            max-height: 50rem;
+        }
+    }
+}

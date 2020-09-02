@@ -2,20 +2,16 @@
     padding-bottom: 4.2rem;
 }
 
-
-
 .niche__catalog {
     padding-top: 3.4rem;
     padding-bottom: 3.4rem;
 }
-
 
 .niche__catalog-list {
     display: flex;
     flex-wrap: wrap;
     margin: -1.7rem -1.5rem;
 }
-
 
 .niche__catalog-list-item {
     width: 25%;
@@ -35,4 +31,74 @@
     }
 }
 
+.niche__menu {
+    border-bottom: 1px solid #E5E5EB;
+    margin-bottom: 2.5rem;
 
+    @include breakpoint(mobile) {
+        margin-bottom: 1rem;
+      
+    }
+}
+
+
+.niche__menu-row {
+    display: flex;
+    flex-wrap: wrap;
+    @include breakpoint(mobile) {
+        flex-wrap: nowrap;
+        padding: 1rem var(--content-padding);
+
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        margin: -1rem calc(-1 * var(--content-padding));
+
+        &::after {
+            content: '';
+            width: 1px;
+            height: 1px;
+            flex-shrink: 0;
+        }
+    }
+}
+
+.niche__menu-link {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    color: #000026;
+    transition: color 0.2s;
+    padding: 2rem 0;
+    flex-shrink: 0;
+    margin-right: 2.5rem;
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        height: 0.3rem;
+        width: 100%;
+        background: #0f65d6;
+        transition: opacity 0.2s;
+        pointer-events: none;
+        opacity: 0;
+    }
+    &:link,
+    &:visited {
+        color: #000026;
+    }
+
+    &:hover {
+        color: #0f65d6;
+    }
+
+    &.active {
+        &:link,
+        &:visited {
+            color: #0f65d6;
+        }
+        &::after {
+            opacity: 1;
+        }
+    }
+}
